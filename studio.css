@@ -1,0 +1,103 @@
+
+body{
+    overflow-x: hidden;
+}
+nav{
+    padding: 25px 20px !important;
+}
+
+.page-title{
+    margin-top: -23px;
+    text-align: center;
+    color: #f2e8dc;
+}
+
+.bg-slide-studio{
+    height: 100vh;
+    
+}
+
+.bg-slide-studio::after{
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    background-image: url('full_hd_retina.jpeg');
+    background-position: center;
+    filter: brightness(50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.studio-intro{
+    background-color: #f2e8dc;
+}
+
+.intro-heading{
+    font-size: 1.9em;
+}
+
+.snippet-sect{
+    background-color: #f2e8dc;
+    padding: 10px 0px;
+}
+
+.snippet-sect img{
+    object-fit: cover;
+}
+
+.snippet-descr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 180px 50px;
+    width: 580px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.studio-title{
+    font-size: 1.9em;
+}
+
+.studio-products-sect{
+    background-color: #f2e8dc;
+    padding-top: 70px;
+}
+
+.studio-products-grp{
+    padding: 20px 20px;
+}
+.studio-product{
+    width: 95%
+}
+
+.studio-product-img{
+    width: 95%;
+    background-color: white;
+    height: 210px;
+}
+
+#text1, #text2, #text3, .banner-text{
+    color: #f2e8dc;
+    list-style: none;
+    position: absolute;
+    top: 90%;
+    font-size: 3.2em;
+    font-weight: 400;
+    width: 100%;
+    padding: 0px 250px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+
+.arrow{
+    background-color: #f2e8dc;
+    
+}

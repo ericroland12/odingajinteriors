@@ -1,0 +1,93 @@
+.vid-bg{
+    height: 100vh !important;
+    position: relative;
+
+  
+}
+
+/* .bg-slide-interior::after{
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    background-image: url('wallpapersden.com_interior-design-style-istanbul_1920x1080.jpg');
+    background-position: center;
+    filter: brightness(80%);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.page-title{
+    margin-top: -23px;
+    text-align: center;
+    color: #f2e8dc;
+}
+
+.snippet-sect{
+    height: 120vh;
+    background-color: #f2e8dc;
+    
+}
+
+.snippet-topic{
+    font-size: 1.8em;
+}
+.snippet-sect img{
+    object-fit: cover;
+}
+
+.snippet-descr{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 450px;
+    padding: 170px 0px;
+    margin-left: 70px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.interiors-showcase{
+    background-color: #f2e8dc;
+}
+
+.interiors-showcase-products{
+    margin-top: 20px;
+    padding: 10px 20px;
+}
+
+.showcase-product{
+    width: 100%;
+    
+}
+
+.showcase-product-img{
+    height: 300px;
+    width: 97%;
+    background-color: white;
+}
+
+.showcase-product-title{
+    font-size: 19px;
+    width: 97%;
+}
+
+#myvid{
+    position: absolute;
+    top : 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%; 
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(70%);
+
+}
+
+.arrow{
+    background-color: #f2e8dc;
+    
+}

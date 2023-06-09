@@ -1,0 +1,71 @@
+.bg-slide-about{
+    height: 100vh;
+    
+}
+
+.bg-slide-about::after{
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    background-image: url('int2.jpg');
+    background-position: center;
+    filter: brightness(60%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#article-about, .who-sect-title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#bg-slide-about-text{
+    color: #f2e8dc;
+    font-size: 2.5em !important;
+    position: absolute;
+    top: 40%;
+}
+
+.who-sect-title{
+    padding-bottom: 10px;
+    background-image: url('https://avanseo.eu/img/title-lines.svg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+.who-sect-descr{
+    padding: 0px 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.service-title{
+    padding-bottom: 10px;
+    background-image: url('https://avanseo.eu/img/title-lines.svg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+.service-sect{
+    background-color: #f2e8dc;
+    padding: 30px 200px;
+    color: #1c292c;
+}
+
+.fa-ul > li{
+    color: #3c4d50;
+    margin-top: 12px;
+}
+
+.fa-ul > li > span{
+    color: #bfa378;
+}
+.fa-ul{
+    margin-top: 40px;
+}
+
+.service-flex{
+    display: flex;
+    justify-content: space-between;
+}
