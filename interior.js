@@ -10,6 +10,8 @@ window.onscroll = () => {
 }
    
 
+
+
 $(function(){
     // $(window).on('scroll', () => {
     //   const sticky = $('nav').offset().top
@@ -19,6 +21,10 @@ $(function(){
     //     $('nav').removeClass('floating-nav')
     //   }
     // })
+
+  
+  
+
 
     $('.burger-group').on('click', () => {
 
@@ -38,13 +44,53 @@ $(function(){
 
 
     })
+
+    // $('.bg-slide').css('filter', 'brightness(60%)')
+    // $('.slide-text').css('filter', 'brightness(100%)')
+
+    $('.bg-slide').vegas({
+      slides: [
+        
+        { src:'spacejoy-9M66C_w_ToM-unsplash.jpg' },
+      
+        { src:'wallpapersden.com_interior-design-style-istanbul_1920x1080.jpg' },
+    
+        { src:'kam-idris-hYb7kbu4x7E-unsplash.jpg' }
+        
+          ],
+        
+          delay : 7000,
+          loop : true,
+          timer : false,
+          autoplay : true,
+          cover:true,
+          align:'center',
+          valign:'center',
+          transition:'fade',
+          transitionDuration: 1500,
+          animationDuration:'auto',
+         
+        
+    
+
+          // overlay : true
+         
+  
+  
+  
+  
+          
+  
+  
+      
+    })
  
 
     // const arr = [text1, text2, text3]
 
   const showText = () => {
 
-    // setTimeout( () => {
+    setTimeout( () => {
       var list = $('.banner-text > li').length
       var count = 0
       setInterval(() => {
@@ -69,12 +115,42 @@ $(function(){
        
       }, 7000)
 
+
+  //     $('#text1').animate({
+  //       opacity: '1',
+  //       top: '40%'
+  //     }, 600, 'linear', setTimeout(() => {
+  //     $('#text1').animate({
+  //       opacity : '0',
+  //       top : '1%'
+  //     }, 400, 'linear', () => {
+  //       $('#text2').animate({
+  //         opacity : '1',
+  //         top : '40%'
+  //       }, 600, 'linear', setTimeout( () => {
+  //         $('#text2').animate({
+  //           opacity : '0',
+  //           top : '1%'
+  //         }, 400, 'linear', () => {
+  //           $('#text3').animate({
+  //             opacity : '1',
+  //             top : '40%'
+  //           }, 600, 'linear', setTimeout( () => {
+  //             $('#text3').animate({
+  //               opacity : '0',
+  //               top : '1%'
+  //             },400, 'linear')
+  //           },6000))
+  //         })
+  //       },6000))
+  //     })
+  //     }, 6000))
      
-    // },800)
+    },800)
    
   }
 
-  showText()
+  // showText()
 
 
 
@@ -82,32 +158,3 @@ $(function(){
 
 
 
-// $('#text1').animate({
-//   opacity: '1',
-//   top: '40%'
-// }, 600, 'linear', setTimeout(() => {
-// $('#text1').animate({
-//   opacity : '0',
-//   top : '1%'
-// }, 400, 'linear', () => {
-//   $('#text2').animate({
-//     opacity : '1',
-//     top : '40%'
-//   }, 600, 'linear', setTimeout( () => {
-//     $('#text2').animate({
-//       opacity : '0',
-//       top : '1%'
-//     }, 400, 'linear', () => {
-//       $('#text3').animate({
-//         opacity : '1',
-//         top : '40%'
-//       }, 600, 'linear', setTimeout( () => {
-//         $('#text3').animate({
-//           opacity : '0',
-//           top : '1%'
-//         },400, 'linear')
-//       },6000))
-//     })
-//   },6000))
-// })
-// }, 6000))

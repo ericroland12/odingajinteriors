@@ -80,7 +80,7 @@ nav{
     height: 210px;
 }
 
-#text1, #text2, #text3, .banner-text{
+ .banner-text{
     color: #f2e8dc;
     list-style: none;
     position: absolute;
@@ -89,9 +89,9 @@ nav{
     font-weight: 400;
     width: 100%;
     padding: 0px 250px;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    text-align: center;
+    text-align: center; */
     opacity: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   

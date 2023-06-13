@@ -69,3 +69,19 @@
     display: flex;
     justify-content: space-between;
 }
+
+.competencies-sect{
+    background-color: #f2e8dc;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
+}
+
+.comps > img{
+    height: 400px;
+    width: 97%;
+    object-fit: cover;
+   
+}
+
+.comps-descr{
+   padding: 0px 20px;
+}

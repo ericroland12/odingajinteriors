@@ -11,11 +11,18 @@ body{
 }
 .bg-slide{
     height: 100vh;
+   
 
 }
 
+.bg-slide > img{
+    color: #292929;
+    background: #000;
+    filter: brightness(60%);
+}
+
 .bg-slide::after{
-    content: '';
+    /* content: '';
     top: 0;
     left: 0;
     right: 0;
@@ -24,9 +31,10 @@ body{
     z-index: -1;
     background-image: url('spacejoy-9M66C_w_ToM-unsplash.jpg');
     background-position: center;
-    filter: brightness(60%);
+ 
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+   
   
 }
 
