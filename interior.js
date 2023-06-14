@@ -22,7 +22,7 @@ $(function(){
     //   }
     // })
 
-  
+    // $('.slide-text').css('filter', 'brightness(100%)')
   
 
 
@@ -46,8 +46,7 @@ $(function(){
     })
 
     // $('.bg-slide').css('filter', 'brightness(60%)')
-    // $('.slide-text').css('filter', 'brightness(100%)')
-
+    
     $('.bg-slide').vegas({
       slides: [
         
@@ -58,7 +57,6 @@ $(function(){
         { src:'kam-idris-hYb7kbu4x7E-unsplash.jpg' }
         
           ],
-        
           delay : 7000,
           loop : true,
           timer : false,
@@ -68,23 +66,14 @@ $(function(){
           valign:'center',
           transition:'fade',
           transitionDuration: 1500,
-          animationDuration:'auto',
+          animationDuration:'auto'
          
-        
-    
+        })
+       
 
-          // overlay : true
-         
-  
-  
-  
-  
-          
-  
-  
-      
-    })
- 
+        $('.bg-slide').vegas(
+          slides[0].css('filter', 'brightness(60%)')
+        )
 
     // const arr = [text1, text2, text3]
 

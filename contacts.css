@@ -1,8 +1,20 @@
 .main{
     height: 150vh;
     background-color: #f2e8dc;
-    z-index: -1000;
+    /* z-index: -1; */
     position: relative;
+}
+input{
+    z-index: 1000;
+    width: 55%;
+    height: 25px;
+    outline: none;
+}
+/* label{
+    margin-top: 10px;
+} */
+.floating-nav, .menu, .nav{
+    z-index: 2;
 }
 
 .banner{
@@ -16,7 +28,7 @@
     right: 0;
     bottom: 65%;
     position: absolute;
-    z-index: -1;
+    /* z-index: -1; */
     background-image: url('ext.jpeg');
     background-position: center;
     filter: brightness(55%);
@@ -28,6 +40,7 @@
     position: absolute;
     top: 20%;
     width: 100%;
+    z-index: 1;
     text-align: center;
     font-size: 2.2em;
     font-weight: 400;
@@ -36,6 +49,14 @@
 
 .burger{
     border: 1px solid black;
+}
+
+.floating-nav .burger{
+    border: 1px solid #f2e8dc;
+}
+
+.floating-nav .slogan{
+    color: #f2e8dc;
 }
 .slogan{
     color: black;
