@@ -45,99 +45,38 @@ $(function(){
 
     })
 
-    // $('.bg-slide').css('filter', 'brightness(60%)')
-    
-    $('.bg-slide').vegas({
-      slides: [
-        
-        { src:'spacejoy-9M66C_w_ToM-unsplash.jpg' },
-      
-        { src:'wallpapersden.com_interior-design-style-istanbul_1920x1080.jpg' },
-    
-        { src:'kam-idris-hYb7kbu4x7E-unsplash.jpg' }
-        
-          ],
-          delay : 7000,
-          loop : true,
-          timer : false,
-          autoplay : true,
-          cover:true,
-          align:'center',
-          valign:'center',
-          transition:'fade',
-          transitionDuration: 1500,
-          animationDuration:'auto'
-         
-        })
-       
 
-        $('.bg-slide').vegas(
-          slides[0].css('filter', 'brightness(60%)')
-        )
-
-    // const arr = [text1, text2, text3]
-
-  const showText = () => {
-
-    setTimeout( () => {
-      var list = $('.banner-text > li').length
-      var count = 0
-      setInterval(() => {
-
-        $('.banner-text > li:eq(' + count + ')').animate({
-          opacity: '1',
-          top: '40%'
-      }, 600, 'linear', setTimeout(() => {
-        $('.banner-text > li:eq(' + count + ')').animate({
-          opacity : '0',
-          top : '1%'
-        }, 400, 'linear'
-        )}, 6000)
-        )
-        console.log(count)
-
-        count += 1
-        if(count == list){
-          count = 0
-        }
-        
-       
-      }, 7000)
+  // const showText = () => {
 
 
-  //     $('#text1').animate({
-  //       opacity: '1',
-  //       top: '40%'
+  //     var list = $('.banner-text > li').length
+  //     var count = 0
+  //     setTimeout(() => {
+
+  //       $('.banner-text > li:eq(' + count + ')').animate({
+  //         opacity: '1',
+  //         top: '40%'
   //     }, 600, 'linear', setTimeout(() => {
-  //     $('#text1').animate({
-  //       opacity : '0',
-  //       top : '1%'
-  //     }, 400, 'linear', () => {
-  //       $('#text2').animate({
-  //         opacity : '1',
-  //         top : '40%'
-  //       }, 600, 'linear', setTimeout( () => {
-  //         $('#text2').animate({
-  //           opacity : '0',
-  //           top : '1%'
-  //         }, 400, 'linear', () => {
-  //           $('#text3').animate({
-  //             opacity : '1',
-  //             top : '40%'
-  //           }, 600, 'linear', setTimeout( () => {
-  //             $('#text3').animate({
-  //               opacity : '0',
-  //               top : '1%'
-  //             },400, 'linear')
-  //           },6000))
-  //         })
-  //       },6000))
-  //     })
-  //     }, 6000))
-     
-    },800)
+  //       $('.banner-text > li:eq(' + count + ')').animate({
+  //         opacity : '0',
+  //         top : '1%'
+  //       }, 400, 'linear'
+  //       )}, 6000)
+  //       )
+  //       console.log(count)
+
+  //       count += 1
+  //       if(count == list){
+  //         count = 0
+  //       }
+
+  //     //  setInterval(showText, 7000)
+        
+       
+  //     },7000)
    
-  }
+  // }
+
 
   // showText()
 
