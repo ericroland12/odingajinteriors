@@ -6,59 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="contacts.css">
     <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
     <link rel="stylesheet" href="node_modules/tachyons/css/tachyons.min.css">
     <script src="interior.js" defer></script>
-    <title>ABOUT US</title>
-
-    <style>
-        .main{
-            height: 100vh;
-            background-color: #f2e8dc;
-            z-index: -1000;
-            position: relative;
-        }
-
-        .banner{
-            height: 40vh;
-        }
-        
-        .banner::after{
-            content: '';
-            top: 20%;
-            left: 0;
-            right: 0;
-            bottom: 40%;
-            position: absolute;
-            z-index: -1;
-            background-image: url('ext.jpeg');
-            background-position: center;
-            filter: brightness(55%);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .banner-text{
-            position: absolute;
-            top: 35%;
-            width: 100%;
-            text-align: center;
-            font-size: 2.2em;
-            font-weight: 400;
-            color: azure;
-        }
-
-        .burger{
-            border: 1px solid black;
-        }
-        .slogan{
-            color: black;
-        }
-    </style>
-
-    <!-- <script>
-        if
-    </script> -->
+    <title>Contact Us - Odinga J. Interiors</title>
 </head>
 <body>
     <div class="page-header">
@@ -106,6 +58,52 @@
     <div class="main">
         <div class="banner">
             <div class="banner-text">Contact Us</div>
+        </div>
+        <div class="row content">
+            <div class="col-6">
+                <div>Are you looking for a genuine property in Port Harcourt and its environments, to buy or do you have a property for sale, lease, rent. We can help you buy that your dream property and also help you sale that your property.
+                   <br><br>
+                    Contact Odinga J Properties today lets help put a smile on your face.  We deliver nothing but the best. You know why? Your comfort is our priority.
+                </div>
+                <div class="form mt4">
+                    <form class="d-flex flex-column">
+                        <label for="name">Your Name (required)</label>
+                        <input type="text" class="name" >
+                        <label for="email">Your Email (required)</label>
+                        <input type="email" class="">
+                        <label for="phone">Your Phone Number (required)</label>
+                        <input type="number" class="">
+                        <label for="subject">Subject</label>
+                        <input type="text" class="">
+                        <label for="message">Message</label>
+                        <input type="text" class="message">
+                        <button type="submit" class="mt3">Send</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-6 d-flex flex-column"></div>
+                    <div class="col-6">
+                        <div class="phones">
+                            <strong>For all enquiries, please contact:</strong><br><br>
+                            <div> 08165277357, 09070651146, 08032662547, 09030729970, 09010642273, 08105109074</div>
+                        </div>
+                        <div class="off-address mt3">
+                            <strong>Office Address</strong>
+                            <div>No 61 Woji Estate Road, Woji, Port Harcourt, Rivers State</div>
+                            <div class="mt3">
+                                <strong>Branch Office</strong>
+                                <div>No. 13 Eligbam/Orazi road, By Everyday Emporium, GRA, Port Harcourt</div>
+                            </div>
+                        </div>
+                    </div>
+                       
+                   
+                </div>
+            
+               
+            </div>
         </div>
     </div>
     <footer class="footer">

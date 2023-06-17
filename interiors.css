@@ -2,7 +2,6 @@
     height: 100vh !important;
     position: relative;
 
-  
 }
 
 /* .bg-slide-interior::after{
@@ -83,11 +82,10 @@
     width: 100%; 
     height: 100vh;
     object-fit: cover;
-    filter: brightness(70%);
+    filter: brightness(80%);
 
 }
 
 .arrow{
     background-color: #f2e8dc;
-    
 }

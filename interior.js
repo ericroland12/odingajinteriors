@@ -10,6 +10,8 @@ window.onscroll = () => {
 }
    
 
+
+
 $(function(){
     // $(window).on('scroll', () => {
     //   const sticky = $('nav').offset().top
@@ -19,6 +21,10 @@ $(function(){
     //     $('nav').removeClass('floating-nav')
     //   }
     // })`Q1  
+
+    // $('.slide-text').css('filter', 'brightness(100%)')
+  
+
 
     $('.burger-group').on('click', () => {
 
@@ -38,37 +44,49 @@ $(function(){
 
 
     })
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 13a31b32667acef35a2ca550b96d721a0b6eabaa
 
-    // const arr = [text1, text2, text3]
 
-  const showText = () => {
+  // const showText = () => {
 
+<<<<<<< HEAD
     // setTimeout( () => {
       var list = $('.banner-text > li').length
       var count = 0
       // setInterval(() => {
+=======
+>>>>>>> 13a31b32667acef35a2ca550b96d721a0b6eabaa
 
-        $('.banner-text > li:eq(' + count + ')').animate({
-          opacity: '1',
-          top: '40%'
-      }, 600, 'linear', setTimeout(() => {
-        $('.banner-text > li:eq(' + count + ')').animate({
-          opacity : '0',
-          top : '1%'
-        }, 400, 'linear'
-        )}, 6000)
-        )
-        console.log(count)
+  //     var list = $('.banner-text > li').length
+  //     var count = 0
+  //     setTimeout(() => {
 
-        count += 1
-        if(count == list){
-          count = 0
-        }
+  //       $('.banner-text > li:eq(' + count + ')').animate({
+  //         opacity: '1',
+  //         top: '40%'
+  //     }, 600, 'linear', setTimeout(() => {
+  //       $('.banner-text > li:eq(' + count + ')').animate({
+  //         opacity : '0',
+  //         top : '1%'
+  //       }, 400, 'linear'
+  //       )}, 6000)
+  //       )
+  //       console.log(count)
+
+  //       count += 1
+  //       if(count == list){
+  //         count = 0
+  //       }
+
+  //     //  setInterval(showText, 7000)
         
        
+<<<<<<< HEAD
       // }, 7000)
 
      
@@ -77,6 +95,14 @@ $(function(){
   }
   showText()
   
+=======
+  //     },7000)
+   
+  // }
+
+
+  // showText()
+>>>>>>> 13a31b32667acef35a2ca550b96d721a0b6eabaa
 
 
 
@@ -84,32 +110,3 @@ $(function(){
 
 
 
-// $('#text1').animate({
-//   opacity: '1',
-//   top: '40%'
-// }, 600, 'linear', setTimeout(() => {
-// $('#text1').animate({
-//   opacity : '0',
-//   top : '1%'
-// }, 400, 'linear', () => {
-//   $('#text2').animate({
-//     opacity : '1',
-//     top : '40%'
-//   }, 600, 'linear', setTimeout( () => {
-//     $('#text2').animate({
-//       opacity : '0',
-//       top : '1%'
-//     }, 400, 'linear', () => {
-//       $('#text3').animate({
-//         opacity : '1',
-//         top : '40%'
-//       }, 600, 'linear', setTimeout( () => {
-//         $('#text3').animate({
-//           opacity : '0',
-//           top : '1%'
-//         },400, 'linear')
-//       },6000))
-//     })
-//   },6000))
-// })
-// }, 6000))
