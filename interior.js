@@ -18,7 +18,7 @@ $(function(){
     //   }else if($(window).scrollY == sticky){
     //     $('nav').removeClass('floating-nav')
     //   }
-    // })
+    // })`Q1  
 
     $('.burger-group').on('click', () => {
 
@@ -38,7 +38,9 @@ $(function(){
 
 
     })
- 
+
+
+
 
     // const arr = [text1, text2, text3]
 
@@ -47,7 +49,7 @@ $(function(){
     // setTimeout( () => {
       var list = $('.banner-text > li').length
       var count = 0
-      setInterval(() => {
+      // setInterval(() => {
 
         $('.banner-text > li:eq(' + count + ')').animate({
           opacity: '1',
@@ -67,14 +69,14 @@ $(function(){
         }
         
        
-      }, 7000)
+      // }, 7000)
 
      
     // },800)
    
   }
-
   showText()
+  
 
 
 
