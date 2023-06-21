@@ -44,23 +44,17 @@ $(function(){
 
 
     })
-<<<<<<< HEAD
 
 
 
-=======
->>>>>>> 13a31b32667acef35a2ca550b96d721a0b6eabaa
 
 
   // const showText = () => {
 
-<<<<<<< HEAD
     // setTimeout( () => {
-      var list = $('.banner-text > li').length
-      var count = 0
+      // var list = $('.banner-text > li').length
+      // var count = 0
       // setInterval(() => {
-=======
->>>>>>> 13a31b32667acef35a2ca550b96d721a0b6eabaa
 
   //     var list = $('.banner-text > li').length
   //     var count = 0
@@ -86,23 +80,14 @@ $(function(){
   //     //  setInterval(showText, 7000)
         
        
-<<<<<<< HEAD
       // }, 7000)
 
      
     // },800)
    
-  }
-  showText()
-  
-=======
-  //     },7000)
-   
   // }
-
-
   // showText()
->>>>>>> 13a31b32667acef35a2ca550b96d721a0b6eabaa
+  
 
 
 
