@@ -1,14 +1,23 @@
 body{
+<<<<<<< HEAD
+=======
+    height: 150vh;
+>>>>>>> origin/master
     background-color: #f2e8dc;
     position: relative;
 }
 
 input{
+<<<<<<< HEAD
     /* z-index: 1000; */
     width: 55%;
+=======
+    z-index: 0;
+    width: 245px;
+>>>>>>> origin/master
     height: 25px;
     outline: none;
-    margin-top: -5px;
+    margin-top: -15px;
 }
 
 button{
@@ -27,12 +36,15 @@ button:hover{
 button:focus{
     outline: none;
 }
-/* label{
-    margin-top: 5px;
-} */
-.floating-nav, .menu, .nav{
-    z-index: 2;
+
+/* .menu{
+    z-index: 3;
 }
+
+.floating-nav, .nav{
+    z-index: 2;
+    position: absolute;
+} */
 
 .banner{
     height: 40vh;
@@ -91,3 +103,11 @@ button:focus{
     /* width: 300px; */
     padding: 20px 20px;
 }
+
+.message{
+    outline: none;
+    height: 120px;
+    overflow: hidden;
+    width: 245px;
+}
+

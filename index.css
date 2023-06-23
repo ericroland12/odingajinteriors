@@ -1,7 +1,7 @@
 *, *::before, *::after{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
    
 }
 
@@ -26,7 +26,7 @@ nav{
     overflow: hidden;
     background: transparent;
     height: 80px;
-    z-index: 100;
+    /* z-index: 3; */
     width: 100vw;
     flex-wrap: wrap;
     align-content: center;
@@ -74,11 +74,16 @@ li a:hover{
     color: white;
     position: absolute;
     top: 30%;
+<<<<<<< HEAD
     font-size: 2.6em;
     font-weight: 500;
+=======
+    font-size: 2.9em;
+    font-weight: 400;
+>>>>>>> origin/master
     width: 100%;
     text-align: center;
-    z-index: 0;
+    z-index: 2;
     animation: fade 40s linear infinite 0s;
 }
 
@@ -116,15 +121,18 @@ li a:hover{
     top: 45%;
     position: absolute;
     padding: 10px 110px;
-    z-index: 0;
+    z-index: 2;
 }
 
-
+.sub-text > .p-graph2{
+    margin-top: -10px;
+}
 
 #findout_btn_main{
     left: 43%;
     top: 62%;
     border-width: 2px;
+    z-index: 2;
     /* position: relative; */
     
 }
@@ -142,7 +150,7 @@ li a:hover{
   height: 100%;
   top: 0px;
   left: 0px;
-  z-index: 0px;
+  z-index: 1;
 }
 
 .slideshow::after{
@@ -161,36 +169,29 @@ li a:hover{
     background-position: center center;
     background-repeat: none;
     opacity: 0;
-    z-index: -1;
+    z-index: 1;
     animation: anime 40s linear infinite 0s;
+<<<<<<< HEAD
     filter: brightness(50%);
+=======
+    filter: brightness(55%);
+>>>>>>> origin/master
 }
 
-/* .slideshow li div{
-    z-index: 1;
-    position: absolute;
-    bottom: 60%;
-    left: 0px;
-    width: 100%;
-    text-align: center;
-    opacity: 0;
-    color: azure;
-
-} */
 
 .slideshow li:nth-child(1) .img-slide{
     background-image: url('spacejoy-9M66C_w_ToM-unsplash.jpg');
 }
 .slideshow li:nth-child(2) .img-slide{
-    background-image: url('wallpapersden.com_interior-design-style-istanbul_1920x1080.jpg');
+    background-image: url('dan-gold-4HG3Ca3EzWw-unsplash.jpg');
     animation-delay: 10s;
 }
 .slideshow li:nth-child(3) .img-slide{
-    background-image: url('rune-enstad-UXFJ-6Zj27M-unsplash.jpg');
+    background-image: url('jenna-beekhuis-7Y9rP1UvFg0-unsplash.jpg');
     animation-delay: 20s;
 }
 .slideshow li:nth-child(4) .img-slide{
-    background-image: url('tomas-jasovsky-d5SZqLkpIrY-unsplash.jpg');
+    background-image: url('lighting.jpg');
     animation-delay: 30s;
 }
 
@@ -199,7 +200,7 @@ li a:hover{
     0% { opacity: 0;}
     1.5% { opacity: 1;}
     25% { opacity: 1;}
-    37.5% { opacity: 0;}
+    32.5% { opacity: 0;}
     100% { opacity: 0;} 
 }
 
@@ -313,12 +314,14 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     /* margin-left: 550px; */
     cursor: pointer;
     transition: 0.4s;
+    
    
 }
 
 .findout_btn:hover{
     background: azure;
     color: #1c292c;
+    text-decoration: none;
 }
 
 .burger{
@@ -383,12 +386,11 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 
 .page-header{
     position: fixed;
-    z-index: 1;
+    z-index: 3;
 }
 
 .menu{
     top: 0 !important;
-    z-index: 10;
     background-color: #1c292c;
     padding: 95px 20px 5px 20px;
     display: none;
@@ -505,7 +507,8 @@ footer{
 
 .viewall_btn:hover{
     color: white;
-    background-color: #1c292c;;
+    background-color: #1c292c;
+    text-decoration: none;
 }
 
 .made{
@@ -563,13 +566,18 @@ footer{
 }
 
 @media only screen and (max-width: 700px){
-    .slide-text-list{
+/* *{
+    overflow-x: visible !important;
+} */
+
+    .slide-text{
         top: 40%;
-        font-size: 1.8em;
+        font-size: 1.9em;
     }
 
     .page-header{
-        z-index: 100;
+        /* z-index: 3; */
+        position: fixed;
     }
 
     .sub-text{
@@ -586,10 +594,10 @@ footer{
         padding: 70px 20px 40px 20px !important;
     }
 
-    .page-header .menu{
+    /* .page-header .menu{
         padding-left: 0;
         padding-right: 0;
-    }
+    } */
     
     .menu-list{
         padding-left: 0;
@@ -647,7 +655,7 @@ footer{
     }
 
     *{
-        overflow-x: hidden !important;
+        /* overflow-x: hidden !important; */
     }
 
   .product{
@@ -675,19 +683,30 @@ footer{
   }
 
   .snippet-btn{
-  margin-left: 100px;
+  margin: 0;
   }
 
   .made{
     margin-top: 15px;
   }
 
+  #findout_btn_main{
+    margin-top: 100px;
+
+}
+
+.snippet-btn-parent{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+  }
  
 }
 
 @media only screen and (min-width: 200px) and (max-width: 390px){
     #findout_btn_main{
-        margin-top: 150px;
+        margin-top: 180px;
 
     }
 
@@ -702,6 +721,8 @@ footer{
     .product_row2{
         display: none;
       }
+
+    
 
       
 }

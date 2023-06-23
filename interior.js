@@ -35,10 +35,13 @@ $(function(){
       if($('.burger').hasClass('open')){
           $('.menu').slideDown(450,() => {
           $('.menu-list > li').fadeIn(350)
+          $('#contact-burger').css('color', '#f2e8dc')
+          $('#contact-slogan').css('color', '#f2e8dc')
       })
       }else{
           $('.menu-list > li').fadeOut(100, () => {
               $('.menu').slideUp(200)
+              $('#contact-slogan').css('color', 'black')
           })
       }
 
