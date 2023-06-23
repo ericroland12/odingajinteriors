@@ -1,11 +1,10 @@
-.main{
-    height: 150vh;
+body{
     background-color: #f2e8dc;
-    /* z-index: -1; */
     position: relative;
 }
+
 input{
-    z-index: 1000;
+    /* z-index: 1000; */
     width: 55%;
     height: 25px;
     outline: none;
@@ -17,11 +16,11 @@ button{
     background-color: #bfa378;
     outline: none;
     border: none;
-    padding: 3px;
+    padding:  5px 3px;
 }
 
 button:hover{
-    background-color: #968161;
+    background-color: #998260;
 
 }
 
@@ -41,10 +40,10 @@ button:focus{
 
 .banner::after{
     content: '';
-    top: 10%;
+    top: 7%;
     left: 0;
     right: 0;
-    bottom: 65%;
+    bottom: 78%;
     position: absolute;
     /* z-index: -1; */
     background-image: url('ext.jpeg');
@@ -56,7 +55,7 @@ button:focus{
 
 .banner-text{
     position: absolute;
-    top: 20%;
+    top: 13.5%;
     width: 100%;
     z-index: 1;
     text-align: center;
