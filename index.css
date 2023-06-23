@@ -1,7 +1,7 @@
 *, *::before, *::after{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
    
 }
 
@@ -26,7 +26,7 @@ nav{
     overflow: hidden;
     background: transparent;
     height: 80px;
-    z-index: 100;
+    /* z-index: 3; */
     width: 100vw;
     flex-wrap: wrap;
     align-content: center;
@@ -78,7 +78,7 @@ li a:hover{
     font-weight: 400;
     width: 100%;
     text-align: center;
-    z-index: 0;
+    z-index: 2;
     animation: fade 40s linear infinite 0s;
 }
 
@@ -116,7 +116,7 @@ li a:hover{
     top: 45%;
     position: absolute;
     padding: 10px 110px;
-    z-index: 0;
+    z-index: 2;
 }
 
 .sub-text > .p-graph2{
@@ -127,6 +127,7 @@ li a:hover{
     left: 43%;
     top: 62%;
     border-width: 2px;
+    z-index: 2;
     /* position: relative; */
     
 }
@@ -144,7 +145,7 @@ li a:hover{
   height: 100%;
   top: 0px;
   left: 0px;
-  z-index: 0px;
+  z-index: 1;
 }
 
 .slideshow::after{
@@ -163,22 +164,11 @@ li a:hover{
     background-position: center center;
     background-repeat: none;
     opacity: 0;
-    z-index: -1;
+    z-index: 1;
     animation: anime 40s linear infinite 0s;
     filter: brightness(55%);
 }
 
-/* .slideshow li div{
-    z-index: 1;
-    position: absolute;
-    bottom: 60%;
-    left: 0px;
-    width: 100%;
-    text-align: center;
-    opacity: 0;
-    color: azure;
-
-} */
 
 .slideshow li:nth-child(1) .img-slide{
     background-image: url('spacejoy-9M66C_w_ToM-unsplash.jpg');
@@ -315,12 +305,14 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     /* margin-left: 550px; */
     cursor: pointer;
     transition: 0.4s;
+    
    
 }
 
 .findout_btn:hover{
     background: azure;
     color: #1c292c;
+    text-decoration: none;
 }
 
 .burger{
@@ -385,12 +377,11 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 
 .page-header{
     position: fixed;
-    z-index: 1;
+    z-index: 3;
 }
 
 .menu{
     top: 0 !important;
-    z-index: 10;
     background-color: #1c292c;
     padding: 95px 20px 5px 20px;
     display: none;
@@ -507,7 +498,8 @@ footer{
 
 .viewall_btn:hover{
     color: white;
-    background-color: #1c292c;;
+    background-color: #1c292c;
+    text-decoration: none;
 }
 
 .made{
@@ -565,13 +557,18 @@ footer{
 }
 
 @media only screen and (max-width: 700px){
+/* *{
+    overflow-x: visible !important;
+} */
+
     .slide-text{
         top: 40%;
         font-size: 1.9em;
     }
 
     .page-header{
-        z-index: 100;
+        /* z-index: 3; */
+        position: fixed;
     }
 
     .sub-text{
@@ -588,10 +585,10 @@ footer{
         padding: 70px 20px 40px 20px !important;
     }
 
-    .page-header .menu{
+    /* .page-header .menu{
         padding-left: 0;
         padding-right: 0;
-    }
+    } */
     
     .menu-list{
         padding-left: 0;
@@ -649,7 +646,7 @@ footer{
     }
 
     *{
-        overflow-x: hidden !important;
+        /* overflow-x: hidden !important; */
     }
 
   .product{
@@ -677,7 +674,7 @@ footer{
   }
 
   .snippet-btn{
-  margin-left: 100px;
+  margin: 0;
   }
 
   .made{
@@ -688,12 +685,19 @@ footer{
     margin-top: 100px;
 
 }
+
+.snippet-btn-parent{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+  }
  
 }
 
 @media only screen and (min-width: 200px) and (max-width: 390px){
     #findout_btn_main{
-        margin-top: 150px;
+        margin-top: 180px;
 
     }
 
@@ -708,6 +712,8 @@ footer{
     .product_row2{
         display: none;
       }
+
+    
 
       
 }

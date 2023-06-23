@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="contacts.css">
-    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
-    <link rel="stylesheet" href="node_modules/tachyons/css/tachyons.min.css">
-    <script src="interior.js" defer></script>
-    <title>Contact Us - Odinga J. Interiors</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+        <link rel="stylesheet" href="index.css">
+        <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+        <link rel="stylesheet" href="node_modules/tachyons/css/tachyons.min.css">
+        <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css">
+        <script src="interior.js" defer></script>
+        <title>All Products - Odinga J. Interiors</title>
+
+        <style>
+
+            .product-header{
+                position: relative;
+            }
+        </style>
+    </head>
 <body>
+
     <div class="page-header">
-        <div class="menu">
+        <div class="menu ">
             <div class="d-flex justify-content-center">
                 <ul class="menu-list">
                     <li>
@@ -37,13 +45,16 @@
            
         </div>
         <nav class="row">
-        
             <div class=" col-4">
-                <div class="burger-group d-flex flex-column" id="contact-burger">
+                <div class="burger-group d-flex flex-column">
                     <div class="burger" id="b1"></div>
                     <div class="burger"id="b2"></div>
                     <div class="burger" id="b3"></div>
                 </div>
+                <!-- <svg class="burger-close" viewBox="0 0 40 40" width="40" height="40">
+                    <line x1="2" y1="38" x2="38" y2="2"/>
+                    <line x1="2" y1="2" x2="38" y2="38"/>
+                </svg> -->
             </div> 
             
             <a class=" col-4 logo" href="index.html">
@@ -51,70 +62,15 @@
             </a>
 
             <div class="col-4">
-                <p class="slogan" id="contact-slogan"><i> Delivering only the best for your comfort is our priority!</i></p> 
+                <p class="slogan"><i> Delivering only the best for your comfort is our priority!</i></p> 
             </div>
         </nav>
     </div>
 
-        <div class="banner">
-            <div class="banner-text">Contact Us</div>
-        </div>
-        <div class="row content">
-            <div class="col-6">
-                <div>Are you looking for a genuine property in Port Harcourt and its environments, to buy or do you have a property for sale, lease, rent. We can help you buy that your dream property and also help you sale that your property.
-                   <br><br>
-                    Contact Odinga J Properties today lets help put a smile on your face.  We deliver nothing but the best. You know why? Your comfort is our priority.
-                </div>
-                <div class="form mt4">
-                    <form class="">
-                        <label for="name">Your Name (required)<br>
-                            <input type="text" class="name" >
-                        </label><br>
-                       
-                        <label for="email">Your Email (required)<br>
-                            <input type="email" class="">
-                        </label><br>
-                      
-                        <label for="phone">Your Phone Number (required)<br>
-                            <input type="number" class="">
-                        </label><br>
-                       
-                        <label for="subject">Subject<br>
-                            <input type="text" class="">
-                        </label><br>
-                        
-                        <label for="message">Message<br>
-                            <textarea class="message"></textarea>
-                        </label><br>
-                        
-                        <button type="submit" class="mt3">Send</button>
-                    </form>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="row">
-                    <div class="col-6 d-flex flex-column"></div>
-                    <div class="col-6">
-                        <div class="phones">
-                            <strong>For all enquiries, please contact:</strong><br><br>
-                            <div> 08165277357, 09070651146, 08032662547, 09030729970, 09010642273, 08105109074</div>
-                        </div>
-                        <div class="off-address mt3">
-                            <strong>Office Address</strong>
-                            <div>No 61 Woji Estate Road, Woji, Port Harcourt, Rivers State</div>
-                            <div class="mt3">
-                                <strong>Branch Office</strong>
-                                <div>No. 13 Eligbam/Orazi road, By Everyday Emporium, GRA, Port Harcourt</div>
-                            </div>
-                        </div>
-                    </div>
-                       
-                   
-                </div>
-            
-               
-            </div>
-        </div>
+    <div class="product-header tc f3">PRODUCTS</div>
+
+
+
 
     <footer class="footer">
         <div class="row">
@@ -149,7 +105,7 @@
     <div class="f-border">
         
             <div>
-             &copy; Odingajglobal ltd - All rights reserved
+            &copy; Odingajglobal ltd - All rights reserved
             </div>
             <div>
                 <a class="webmail">Webmail</a>
@@ -203,9 +159,9 @@
                 </ul>
             </div>
         </div>
-       </div>
-       <script src="assets/js/plugins/bootstrap.min.js"></script>
+    </div>
+</body>
+<script src="assets/js/plugins/bootstrap.min.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
 </html>
