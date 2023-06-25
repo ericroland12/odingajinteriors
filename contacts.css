@@ -1,20 +1,11 @@
 body{
-<<<<<<< HEAD
-=======
-    height: 150vh;
->>>>>>> origin/master
     background-color: #f2e8dc;
     position: relative;
 }
 
 input{
-<<<<<<< HEAD
     /* z-index: 1000; */
-    width: 55%;
-=======
-    z-index: 0;
     width: 245px;
->>>>>>> origin/master
     height: 25px;
     outline: none;
     margin-top: -15px;
@@ -76,11 +67,16 @@ button:focus{
     color: azure;
 }
 
-.burger{
-    border: 1px solid black;
+.burger-con{
+    border: 1px solid ;
+    margin-top: 6px;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
 }
 
-.floating-nav .burger{
+.floating-nav .burger-con{
     border: 1px solid #f2e8dc;
 }
 
@@ -111,3 +107,16 @@ button:focus{
     width: 245px;
 }
 
+.error-msg{
+    color: red;
+    font-size: 12px;
+}
+
+.feedback{
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+@media only screen and (max-width: 700px){
+       
+}

@@ -32,65 +32,61 @@ $(function(){
       $('#b2').toggleClass('open')
       $('#b3').toggleClass('open')
 
-      if($('.burger').hasClass('open')){
+      if($('.burger').hasClass('open') || $('.burger-con').hasClass('open')){
           $('.menu').slideDown(450,() => {
           $('.menu-list > li').fadeIn(350)
-          $('#contact-burger').css('color', '#f2e8dc')
+          $('.burger-con').css('color', '#f2e8dc')
           $('#contact-slogan').css('color', '#f2e8dc')
       })
       }else{
           $('.menu-list > li').fadeOut(100, () => {
               $('.menu').slideUp(200)
+              $('.burger-con').css('color', 'black')
               $('#contact-slogan').css('color', 'black')
+             
           })
       }
 
 
     })
 
+const formSubmit = () => {
 
+  var saveData = []
 
-
-
-  // const showText = () => {
-
-    // setTimeout( () => {
-      // var list = $('.banner-text > li').length
-      // var count = 0
-      // setInterval(() => {
-
-  //     var list = $('.banner-text > li').length
-  //     var count = 0
-  //     setTimeout(() => {
-
-  //       $('.banner-text > li:eq(' + count + ')').animate({
-  //         opacity: '1',
-  //         top: '40%'
-  //     }, 600, 'linear', setTimeout(() => {
-  //       $('.banner-text > li:eq(' + count + ')').animate({
-  //         opacity : '0',
-  //         top : '1%'
-  //       }, 400, 'linear'
-  //       )}, 6000)
-  //       )
-  //       console.log(count)
-
-  //       count += 1
-  //       if(count == list){
-  //         count = 0
-  //       }
-
-  //     //  setInterval(showText, 7000)
+  $('.enter').on('click', (e) => {
+    e.preventDefault()
+    if($('.name').val() == ''){
+      $('#error1').html('This field is required')
+    }else if($('.mail').val() == ""){
+        $('#error2').html('This field is required')
+    }else if($('.phone').val() == "" ){
+      $('#error3').html('This field is required')
+    }else if( $('.phone').val().length < 11 || $('.phone').val().length > 11){
+         $('#error3').html('Phone number is invalid')
+    }else{
         
-       
-      // }, 7000)
+      const clientData = {
+        name: $('.name').val(),
+        email: $('.mail').val(),
+        phone: $('.phone').val(),
+        subject: $('.sub').val(),
+        message: $('.message').val()
+      }
 
-     
-    // },800)
-   
-  // }
-  // showText()
+      saveData.push(clientData)
+      console.log(clientData)
+      $('.error-msg').hide()
+      $('form')[0].reset()
+      $('.feedback').html('Message sent successfully!')
+    } 
+  })
+ 
+}
   
+
+
+formSubmit()
 
 
 
