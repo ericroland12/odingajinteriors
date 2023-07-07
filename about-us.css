@@ -107,13 +107,16 @@
     }
 
     .service-sect{
+        width: 100%;
         padding: 0;
         
     }
 
     .service-flex{
-        display: block;
+        width: 95%;
         font-size: 10px;
+        display: flex;
+        /* margin-left: 50px; */
     }
 
     #comps-grp2{

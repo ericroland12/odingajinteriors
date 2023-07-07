@@ -4,20 +4,7 @@
 
 }
 
-/* .bg-slide-interior::after{
-    content: '';
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    position: absolute;
-    z-index: -1;
-    background-image: url('wallpapersden.com_interior-design-style-istanbul_1920x1080.jpg');
-    background-position: center;
-    filter: brightness(80%);
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
+
 
 .page-title{
     margin-top: -23px;
@@ -63,9 +50,14 @@
 }
 
 .showcase-product-img{
-    height: 300px;
+    /* height: 300px; */
     width: 97%;
-    background-color: white;
+    /* background-color: white; */
+}
+
+.showcase-product-img > img{
+    object-fit: cover;
+    height: 300px;
 }
 
 .showcase-product-title{
@@ -86,6 +78,75 @@
 
 }
 
+/* .vid-bg-slideText{
+    display: none;
+} */
+
 .arrow{
     background-color: #f2e8dc;
+}
+
+@media only screen and (max-width: 700px){
+
+    .vid-bg::after{
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        z-index: -1;
+        background-image: url('INTERIORS/1.jpg');
+        background-position: center;
+        filter: brightness(60%);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .vid-bg-slideText{
+        color: #f2e8dc;
+        position: absolute;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        top: 40%;
+        font-size: 1.9em;
+        font-weight: 400;
+        width: 100%;
+        text-align: center;
+
+    }
+
+
+    #myvid{
+        display: none;
+    }
+
+    .interiors-showcase-products{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        place-content: center;
+    }
+
+    #no_display1, #no_display2{
+        display: none;
+    }
+
+    #last-showcase{
+        margin-top: 20px;
+      text-align: center;
+    }
+
+    .showcase-product-img > img{
+        height: 250px;
+    }
+
+    .snippet-descr{
+        margin: 0;
+        padding: 0px 20px;
+        width: 100vw;
+    }
+
+    .snippet-sect > .img-sect > img{
+        height: 320px;
+    }
+
+
 }

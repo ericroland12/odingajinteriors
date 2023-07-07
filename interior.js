@@ -40,7 +40,7 @@ $(function(){
       })
       }else{
           $('.menu-list > li').fadeOut(100, () => {
-              $('.menu').slideUp(200)
+              $('.menu').slideUp(300)
               $('.burger-con').css('color', 'black')
               $('#contact-slogan').css('color', 'black')
              
@@ -78,7 +78,7 @@ const formSubmit = () => {
       console.log(clientData)
       $('.error-msg').hide()
       $('form')[0].reset()
-      $('.feedback').html('Message sent successfully!')
+      $('.feedback').show()
     } 
   })
  

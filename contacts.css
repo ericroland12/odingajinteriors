@@ -3,8 +3,8 @@ body{
     position: relative;
 }
 
+
 input{
-    /* z-index: 1000; */
     width: 245px;
     height: 25px;
     outline: none;
@@ -21,21 +21,12 @@ button{
 
 button:hover{
     background-color: #998260;
-
 }
 
 button:focus{
     outline: none;
 }
 
-/* .menu{
-    z-index: 3;
-}
-
-.floating-nav, .nav{
-    z-index: 2;
-    position: absolute;
-} */
 
 .banner{
     height: 40vh;
@@ -43,12 +34,11 @@ button:focus{
 
 .banner::after{
     content: '';
-    top: 7%;
+    top: 5%;
     left: 0;
     right: 0;
-    bottom: 78%;
+    bottom: 80%;
     position: absolute;
-    /* z-index: -1; */
     background-image: url('ext.jpeg');
     background-position: center;
     filter: brightness(55%);
@@ -58,7 +48,7 @@ button:focus{
 
 .banner-text{
     position: absolute;
-    top: 13.5%;
+    top: 11.5%;
     width: 100%;
     z-index: 1;
     text-align: center;
@@ -89,9 +79,12 @@ button:focus{
 
 .content{
     margin-top: 140px;
+    display: flex;
+    justify-content: center;
     padding: 10px 180px;
+   /* width: 70%; */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .phones, .off-address{
@@ -113,10 +106,65 @@ button:focus{
 }
 
 .feedback{
-    font-size: 15px;
-    margin-top: 15px;
+    font-size: 13px;
+    margin-top: 30px;
+    border: 2px solid #fbba58;
+    padding: 3px 20px;
+    width: 80%;
+    display: none;
+}
+
+.help{
+    padding: 0px 45px;
 }
 
 @media only screen and (max-width: 700px){
+
+    .content{
+        padding: 10px 20px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .form-sect{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        /* flex-direction: column; */
        
+    }
+
+    .banner::after{
+        top: 4%;
+        bottom: 82%;   
+    }
+
+    .banner-text{
+        top: 9.5%;
+    }
+
+    input{
+        width: 280px;
+        height: 30px;
+    }
+
+    .message{
+        width: 280px;
+    }
+
+    .contact-sect{
+        margin-top: 50px;
+    }
+
+    .help{
+        padding: 0px 10px;
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 420px){
+    .content{
+        margin-top: 140px;
+    }
 }
