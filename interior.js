@@ -8,6 +8,9 @@ window.onscroll = () => {
     document.getElementsByTagName('nav')[0].classList.remove('floating-nav')
   }
 }
+var width = window.innerWidth
+var height = window.innerHeight
+console.log(width, height)
    
 
 

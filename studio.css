@@ -34,7 +34,7 @@ nav{
 }
 
 .studio-intro{
-    background-color: #f2e8dc;
+    background-color:  #70510C;
 }
 
 .intro-heading{
@@ -136,6 +136,9 @@ nav{
     
 }
 
+/* #70510C
+#84600F */
+
 
 
 
@@ -173,11 +176,14 @@ nav{
     #no-display1, #no-display2{
         display: none !important;
     }
+
+    .create{
+
+    }
 }
 
 @media only screen and (min-width: 400px) and (max-width: 420px){
     .arrow{
- 
     }
 
     

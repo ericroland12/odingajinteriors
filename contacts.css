@@ -148,6 +148,7 @@ button:focus{
     input{
         width: 280px;
         height: 30px;
+        margin-top: 3px;
     }
 
     .message{
