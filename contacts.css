@@ -27,6 +27,11 @@ button:focus{
     outline: none;
 }
 
+.burger{
+    
+    border: 1px solid black;
+
+}
 
 .banner{
     height: 40vh;
@@ -57,24 +62,17 @@ button:focus{
     color: azure;
 }
 
-.burger-con{
-    border: 1px solid ;
-    margin-top: 6px;
-    border-radius: 5px;
-    transition: all 0.3s linear;
-    position: relative;
-    transform-origin: 1px;
-}
 
-.floating-nav .burger-con{
-    border: 1px solid #f2e8dc;
+.slogan{
+    color: black;
 }
 
 .floating-nav .slogan{
     color: #f2e8dc;
 }
-.slogan{
-    color: black;
+
+.floating-nav .burger{
+   border: 1px solid #f2e8dc;
 }
 
 .content{

@@ -35,17 +35,17 @@ $(function(){
       $('#b2').toggleClass('open')
       $('#b3').toggleClass('open')
 
-      if($('.burger').hasClass('open') || $('.burger-con').hasClass('open')){
-          $('.menu').slideDown(450,() => {
+      if($('.burger').hasClass('open')){
+          $('.menu').slideDown(350,() => {
           $('.menu-list > li').fadeIn(350)
           $('.burger-con').css('color', '#f2e8dc')
-          $('#contact-slogan').css('color', '#f2e8dc')
+          // $('#contact-slogan').css('color', '#f2e8dc')
       })
       }else{
           $('.menu-list > li').fadeOut(100, () => {
               $('.menu').slideUp(300)
               $('.burger-con').css('color', 'black')
-              $('#contact-slogan').css('color', 'black')
+              // $('#contact-slogan').css('color', 'black')
              
           })
       }
